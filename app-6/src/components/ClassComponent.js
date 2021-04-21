@@ -30,7 +30,7 @@ class ClassComponent extends Component{
         return(
             <div>
                 <h1> My to-do List: </h1>
-                <input onChange={(e) => this.handleChange(e.target.value)} />
+                <input value={this.state.inputValue} onChange={(e) => this.handleChange(e.target.value)} />
                 <button onClick={() => this.add()}> Add </button>
                 <h3> {array1} </h3>
             </div>
