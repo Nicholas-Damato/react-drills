@@ -14,7 +14,7 @@ class NewTask extends Component{
     }
 
     add = () => {
-        this.props.add(this.state.input)
+        this.props.add(this.state.inputValue)
         this.setState({inputValue: ''})
     } 
 
